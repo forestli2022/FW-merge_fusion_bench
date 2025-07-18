@@ -1,2 +1,6 @@
 from .fw_hard import FrankWolfeHardAlgorithm
 from .fw_soft import FrankWolfeSoftAlgorithm
+from .fw_hard_am import FrankWolfeHardAdamergingAlgorithm
+from .fw_soft_loss_approx import FrankWolfeSoftLossApproxAlgorithm
+from .fw_hard_loss_approx import FrankWolfeHardLossApproxAlgorithm
+from .fw_hard_am_loss_approx import FrankWolfeHardAdamergingLossApproxAlgorithm

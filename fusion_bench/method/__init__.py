@@ -100,7 +100,7 @@ _import_structure = {
         "SparseLoForLlama",
         "PCPSparseLoForLlama",
     ],
-    "fw_merging": ["FrankWolfeHardAlgorithm", "FrankWolfeSoftAlgorithm"],
+    "fw_merging": ["FrankWolfeHardAlgorithm", "FrankWolfeSoftAlgorithm", "FrankWolfeHardAdamergingAlgorithm", "FrankWolfeSoftLossApproxAlgorithm", "FrankWolfeHardLossApproxAlgorithm", "FrankWolfeHardAdamergingLossApproxAlgorithm"],
 }
 
 
@@ -182,7 +182,7 @@ if TYPE_CHECKING:
     from .ties_merging import TiesMergingAlgorithm
     from .we_moe import CLIPWeightEnsemblingMoEAlgorithm
     from .weighted_average import WeightedAverageAlgorithm, WeightedAverageForLLama
-    from .fw_merging import FrankWolfeHardAlgorithm, FrankWolfeSoftAlgorithm
+    from .fw_merging import FrankWolfeHardAlgorithm, FrankWolfeSoftAlgorithm, FrankWolfeHardAdamergingAlgorithm, FrankWolfeSoftLossApproxAlgorithm, FrankWolfeHardLossApproxAlgorithm, FrankWolfeHardAdamergingLossApproxAlgorithm
 
 else:
     sys.modules[__name__] = LazyImporter(

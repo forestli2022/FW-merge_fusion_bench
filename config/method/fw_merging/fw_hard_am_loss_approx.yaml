@@ -1,0 +1,16 @@
+_target_: fusion_bench.method.FrankWolfeHardAdamergingLossApproxAlgorithm
+merge_fn: task_arithmetic
+max_iters: 10
+step_size: 0.1
+dataset_size: 100
+tasks: []
+init_weight: base
+loss_fn: cross_entropy
+scaling_factor: 0.3
+max_num_models: 100
+granularity: task
+init_layer_weights: 0.0
+ada_merge: True
+ada_max_steps: 1000
+ada_optimizer: adam
+ada_lr: 1e-3
